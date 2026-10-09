@@ -11,7 +11,7 @@
 ![Accuracy](https://img.shields.io/badge/Test%20accuracy-92.5%25-4fd18b)
 ![Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?logo=render&logoColor=white)
 
-[Live demo](https://YOUR-APP-NAME.onrender.com) · [API docs](https://YOUR-APP-NAME.onrender.com/docs) · [Training notebook](DL_Emotion_Classification.ipynb)
+[Live demo]([https://YOUR-APP-NAME.onrender.com](https://emotion-classifier-fastapi.onrender.com)) · [API docs](https://YOUR-APP-NAME.onrender.com/docs) · [Training notebook](DL_Emotion_Classification.ipynb)
 
 <img src="assets/demo.png" alt="Emotion Classifier interface showing the sentence 'I feel like i am in love with you' classified as Love with 61% confidence" width="900">
 
