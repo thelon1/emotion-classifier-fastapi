@@ -1,11 +1,40 @@
-<! DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Emotion Reader</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
 <body>
-        <h1>App is working! </h1>
+<canvas id="field" aria-hidden="true"></canvas>
+<div class="orb o1"></div><div class="orb o2"></div>
+<main>
+  <header>
+    <span class="status" id="status"><i></i><b>Connecting to model</b></span>
+    <h1>How does this sentence feel?</h1>
+    <p>Type something short. A BiGRU model scores it across six emotions, and the whole page shifts to match.</p>
+  </header>
+
+  <section class="composer">
+    <textarea id="text" maxlength="120" rows="3" aria-label="Sentence to analyze" placeholder="I can't believe they remembered my birthday"></textarea>
+    <div class="bar">
+      <span id="count">0 / 120</span>
+      <button id="go" disabled><span class="lbl">Read emotion</span><span class="dots"><i></i><i></i><i></i></span></button>
+    </div>
+  </section>
+
+  <div class="chips" id="chips" aria-label="Example sentences"></div>
+  <p class="err" id="err" role="alert"></p>
+  <section class="result" id="result" aria-live="polite"></section>
+  <section class="history" id="history" hidden>
+    <h3>Recent</h3>
+    <div id="hist"></div>
+  </section>
+</main>
+<script src="/static/script.js"></script>
 </body>
 </html>
