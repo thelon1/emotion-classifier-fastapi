@@ -13,8 +13,6 @@
 
 [Live demo](https://emotion-classifier-fastapi.onrender.com) · [API docs](https://YOUR-APP-NAME.onrender.com/docs) · [Training notebook](DL_Emotion_Classification.ipynb)
 
-<img src="assets/demo.png" alt="Emotion Classifier interface showing the sentence 'I feel like i am in love with you' classified as Love with 61% confidence" width="900">
-
 </div>
 
 ---
